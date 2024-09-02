@@ -8,6 +8,7 @@ const errorController = require('./controllers/404');
 const app = express();
 
 app.set('view engine', 'ejs');
+// configure the directory for the view templates, the first parameter has to be views.
 app.set('views', 'views');
 
 const adminRoutes = require('./routes/admin');
